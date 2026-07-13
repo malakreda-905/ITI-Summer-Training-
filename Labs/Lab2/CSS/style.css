@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(214, 246, 246);
+}
+
+table{
+    border-spacing: 20px 10px; 
+    margin: auto;
+}
+
+table, td{
+    border: 2px solid grey; 
+    border-collapse: collapse;
+}
+
+td{
+    padding: 20px; 
+    font-size: 20pt;
+}
+
+caption{
+    font-size: 30pt; 
+    font-weight: bold;
+}
+
+.center{
+    text-align: center;
+}
+
+.interests{
+    display: grid;
+     grid-template-columns: repeat(3, 1fr);
+}
+
+input[type="submit"], input[type="reset"]{
+    background-color:beige; 
+    text-align: center;
+    padding: 10px 20px;
+    margin: 0px 50px;
+}

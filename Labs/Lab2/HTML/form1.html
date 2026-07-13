@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <table>
+        <caption><u>Registration Form</u></caption>
+
+        <form action = "../../Lab1/HTML/page1.html" method = "get">
+            <tr>
+                <td>First Name</td>
+                <td><input type = "text" name = "firstname" placeholder = "Enter your first name"></td>
+            </tr>
+            <tr>
+                <td> Last Name</td>
+                <td><input type = "text" name = "lastname" placeholder = "Enter your last name"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type = "email" name = "email" placeholder = "Enter your email"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type = "password" name = "password" placeholder = "Enter your password"></td>
+            </tr>
+            <tr>
+                <td rowspan = "2">Gender</td>
+                <td><input type = "radio" name = "gender" value = "male"> Male</td>
+            </tr>
+            <tr>
+                <td><input type = "radio" name = "gender" value = "female"> Female</td>
+            </tr>
+            <tr>
+                <td>Country</td>
+                <td>
+                    <select name = "country">
+                        <optgroup label = "Africa">
+                            <option value = "Egypt">Egypt</option>
+                            <option value = "Morocco">Morocco</option>
+                            <option value = "South Africa">South Africa</option>
+                        </optgroup>
+                        <optgroup label = "Asia">
+                            <option value = "China">China</option>
+                            <option value = "India">India</option>
+                            <option value = "Japan">Japan</option>
+                        </optgroup>
+                        <optgroup label = "Europe">
+                            <option value = "France">France</option>
+                            <option value = "Germany">Germany</option>
+                            <option value = "Italy">Italy</option>
+                        </optgroup>
+                        <optgroup label = "North America">
+                            <option value = "Canada">Canada</option>
+                            <option value = "Mexico">Mexico</option>
+                            <option value = "US">United States</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Birthday</td>
+                <td><input type = "date" name = "birthday"></td>
+            </tr>
+            <tr>
+                <td colspan = "2" class = "center"><u>Interests</u></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="interests">
+                        <label><input type="checkbox" name="interests" value="sports"> Sports</label>
+                        <label><input type="checkbox" name="interests" value="music"> Music</label>
+                        <label><input type="checkbox" name="interests" value="reading"> Reading</label>
+
+                        <label><input type="checkbox" name="interests" value="fashion"> Fashion</label>
+                        <label><input type="checkbox" name="interests" value="shopping"> Shopping</label>
+                        <label><input type="checkbox" name="interests" value="movies"> Movies</label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan = "2" class = "center"><u>Bio</u></td>
+            </tr>
+            <tr>
+                <td colspan = "2">
+                    <textarea name = "bio" rows = "5" cols = "50"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan = "2">
+                    <input type = "submit" value = "Register">
+                    <input type = "reset" value = "Clear">
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>
