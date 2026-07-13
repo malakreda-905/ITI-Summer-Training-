@@ -1,0 +1,27 @@
+body {
+    background-color: #f6c3c3;
+}
+
+.center{
+    text-align: center;
+}
+
+#font{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#size{
+    font-size: 12px;
+}
+
+#color{
+    color: red;
+}
+
+.right{
+    text-align: right;
+}
+
+.left{
+    text-align: left;
+}
