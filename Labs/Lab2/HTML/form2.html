@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled Document</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <style>
+        input[type = "checkbox"]{
+            padding: 20px; 
+            margin: 10px;
+        }
+        input[type = "submit"]{
+            background-color:beige; 
+            text-align: center;
+            padding: 10px 20px;
+            margin: 0px 200px;
+            color: red; 
+        }
+        p{
+            font-weight: bold;
+            color:rgba(137, 43, 226, 0.666); 
+        }
+    </style>
+</head>
+<body>
+    <br><br><br>
+    <p style="font-size: 30pt; font-weight: bold; text-align: center; color:red;">Login</p>
+    <div class = "empty">
+        <form action = "../../Lab1/HTML/page2.html" method = "get">
+            <p>User name: </p>
+            <input type = "text" name = "username" placeholder = "Enter your user name">
+            <p>User Password: </p>
+            <input type = "password" name = "password" placeholder = "Enter your password"> <br>
+            <input type = "checkbox" name = "remember" value = "yes"> Remember me <br> 
+            <input type = "submit" value = "Sign in">
+        </form>
+    </div>
+</body>
+</html>
