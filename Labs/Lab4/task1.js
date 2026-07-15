@@ -3,8 +3,6 @@ function isPalindrome(str) {
     return str === s; 
 }
 
-function printResult(str){
-}
 
 var str = prompt("Enter a string: ");
 
