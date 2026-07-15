@@ -40,7 +40,7 @@ var sum = 0;
 if(z === "odd"){
     for(var i = a; i <= b; i++){
         if(i % 2 !== 0){
-            sum += i;
+            sum += Number(i);
             console.log(i);
         }
     }
@@ -50,7 +50,7 @@ if(z === "odd"){
 else if(z === "even"){
     for(var i = a; i <= b; i++){
         if(i % 2 === 0){
-            sum += i;
+            sum += Number(i);
             console.log(i);
         }
     }
@@ -59,7 +59,7 @@ else if(z === "even"){
 
 else if(z === "no"){
     for(var i = a; i <= b; i++){
-        sum += i;
+        sum += Number(i);
         console.log(i);
     }   
     console.log("The sum of numbers between " + a + " and " + b + " is: " + sum);
