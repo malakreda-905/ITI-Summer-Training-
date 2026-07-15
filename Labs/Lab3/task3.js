@@ -38,29 +38,35 @@ var b = max(x, y);
 var sum = 0; 
 
 if(z === "odd"){
+    let numbers = "";
     for(var i = a; i <= b; i++){
         if(i % 2 !== 0){
             sum += Number(i);
-            console.log(i);
+            numbers += i + " ";
         }
     }
+    console.log(numbers);
     console.log("The sum of odd numbers between " + a + " and " + b + " is: " + sum);
 }
 
 else if(z === "even"){
+    let numbers = "";
     for(var i = a; i <= b; i++){
         if(i % 2 === 0){
             sum += Number(i);
-            console.log(i);
+            numbers += i + " ";
         }
     }
+    console.log(numbers);
     console.log("The sum of even numbers between " + a + " and " + b + " is: " + sum);
 }
 
 else if(z === "no"){
+    let numbers = "";
     for(var i = a; i <= b; i++){
         sum += Number(i);
-        console.log(i);
+        numbers += i + " ";
     }   
+    console.log(numbers);
     console.log("The sum of numbers between " + a + " and " + b + " is: " + sum);
 }
