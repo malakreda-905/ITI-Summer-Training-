@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <caption><u>Registration Form</u></caption>
+
+        <form action = "welcome.html" method = "post">
+            <tr>
+                <td>Name</td>
+                <td><input type = "text" name = "name" placeholder = "Enter your name"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type = "email" name = "email" placeholder = "Enter your email"></td>
+            </tr>
+            <tr>
+                <td>Mobile Phone</td>
+                <td><input type = "text" name = "mobile" placeholder = "Enter your mobile number"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type = "password" name = "password" placeholder = "Enter your password"></td>
+            </tr>
+            <tr>
+                <td rowspan = "2">Gender</td>
+                <td><input type = "radio" name = "gender" value = "male"> Male</td>
+            </tr>
+            <tr>
+                <td><input type = "radio" name = "gender" value = "female"> Female</td>
+            </tr>
+            <tr>
+                <td>Job Title</td>
+                <td><input type = "text" name = "job_title" placeholder = "Enter your job title"></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><input type = "text" name = "address" placeholder = "Enter your address"></td>
+            </tr>
+            <tr>
+                <td colspan = "2">
+                    <input type = "submit" value = "Register">
+                    <input type = "reset" value = "Clear">
+                </td>
+            </tr>
+        </form>
+    </table>
+    <script src = "task.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+body {
+    background-image: url("back.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+table{
+    border-spacing: 20px 10px; 
+    margin: auto;
+}
+
+table, td{
+    border: 2px solid grey; 
+    border-collapse: collapse;
+}
+
+td{
+    padding: 20px; 
+    font-size: 20pt;
+}
+
+caption{
+    font-size: 30pt; 
+    font-weight: bold;
+    text-align: center;
+}
+
+.center{
+    text-align: center;
+}
+
+input[type="submit"], input[type="reset"]{
+    background-color:beige; 
+    text-align: center;
+    padding: 10px 20px;
+    margin: 0px 50px;
+}
+
+
