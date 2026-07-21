@@ -36,4 +36,12 @@ input[type="submit"], input[type="reset"]{
     margin: 0px 50px;
 }
 
+#content{
+    width: 70%;
+    margin: 50px auto;
+    font-size: 18pt;
+}
 
+h1{
+    color: darkblue;
+}
