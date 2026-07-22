@@ -34,3 +34,14 @@ document.querySelector("[value='Next']").addEventListener("click",
         }
     }
 );
+
+document.querySelector("[value='Previous']").addEventListener("click",
+    function(){
+        var i = index(); 
+        if(i !== 0){
+            document.images[i].style.display = "none";
+            document.images[i-1].style.display = "block";
+        }
+    }
+);
+
