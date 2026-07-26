@@ -1,0 +1,27 @@
+#container {
+    width: 500px;
+    height: 400px;
+    border: 3px solid orange;
+    position: relative;
+}
+
+#icon1,
+#icon2,
+#top1 {
+    position: absolute;
+}
+
+#icon1 {
+    left: 0;
+    top: 175px;
+}
+
+#icon2 {
+    left: 450px;
+    top: 175px;
+}
+
+#top1 {
+    left: 225px;
+    top: 350px;
+}
