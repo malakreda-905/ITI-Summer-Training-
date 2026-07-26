@@ -8,7 +8,7 @@ function setCookie(name, value, days){
         throw new RangeError("Number of args must be 2 or 3"); 
     }
 
-    if(name.trim === "" || !(isNaN(name))){
+    if(name.trim() === "" || (typeof name !== "string")){
         throw new TypeError("Name of the cookie must be given"); 
     }
 
@@ -28,7 +28,7 @@ function hasCookie(name){
     if(arguments.length !== 1){
         throw new RangeError("You must pass exactly the name of the cookie"); 
     }
-    if(!(isNaN(name))){
+    if(typeof name !== "string"){
         throw new TypeError("Name of the cookie must be string"); 
     }
     var cookies = document.cookie.split("; ");
@@ -48,7 +48,7 @@ function getCookie(name){
         throw new RangeError("You must pass exactly the name of the cookie"); 
     }
 
-    if(!(isNaN(name))){
+    if(typeof name !== "string"){
         throw new TypeError("Name of the cookie must be string"); 
     }
 
@@ -56,7 +56,7 @@ function getCookie(name){
         throw new Error("Cookie not found!!!!!!"); 
     }
 
-    console.log(cookie); 
+    return cookie; 
 }
 
 function deleteCookie(name){
@@ -64,7 +64,7 @@ function deleteCookie(name){
         throw new RangeError("You must pass exactly the name of the cookie"); 
     }
 
-    if(!(isNaN(name))){
+    if(typeof name !== "string"){
         throw new TypeError("Name of the cookie must be string"); 
     }
 
@@ -72,7 +72,7 @@ function deleteCookie(name){
         throw new Error("Cookie not found!!!!!!"); 
     }
 
-    document.cookie = cookie.split("=")[0] + "=; Max-Age=0"; 
+    document.cookie = name + "=; Max-Age=0"; 
 }
 
 function allCookie(){
@@ -82,7 +82,5 @@ function allCookie(){
 
     var cookies = document.cookie.split("; ");
     
-    for(var i = 0; i < cookies.length; i++){
-        console.log(cookies[i]); 
-    }
+    return cookies; 
 }
