@@ -4,7 +4,17 @@ var submit = document.getElementById("btn1");
 submit.addEventListener("click", 
     function (){
         if(validate()){   
-            location.href = "profile.html"; 
+            var name = document.getElementById("name").value; 
+            var age = document.getElementById("age").value; 
+            var gender = document.querySelector('input[name="gender"]:checked').value; 
+            var color = document.getElementById("color").value; 
+
+            setCookie("name",name,2); 
+            setCookie("age",age,2); 
+            setCookie("gender",gender,2); 
+            setCookie("color",color,2); 
+
+            location.href = "profile.html";             
         } 
     }
 ); 
