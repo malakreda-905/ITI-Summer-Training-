@@ -14,6 +14,14 @@ submit.addEventListener("click",
             setCookie("gender",gender,2); 
             setCookie("color",color,2); 
 
+            // var visits = hasCookie("visits"); 
+            // if(visits){
+            //     setCookie("visits",Number(getCookie("visits")) + 1,10); 
+            // }
+            // else{
+            //     setCookie("visits",1,10); 
+            // }
+            
             location.href = "profile.html";             
         } 
     }

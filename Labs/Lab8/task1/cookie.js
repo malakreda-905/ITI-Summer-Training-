@@ -36,7 +36,7 @@ function hasCookie(name){
     for(var i = 0; i < cookies.length; i++){
         var row = cookies[i].split("="); 
         if(row[0] === name){
-            cookie = row[0] + "=" + row[1]; 
+            cookie = row[1]; 
             return true; 
         }
     }
