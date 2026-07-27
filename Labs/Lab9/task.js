@@ -1,6 +1,6 @@
 var fruits = ["apple", "strawberry", "banana", "orange", "mango"]; 
 
-var res1 = fruits.every(fruit => fruit instanceof String); 
+var res1 = fruits.every(fruit => typeof fruit === "string"); 
 console.log(res1); 
 
 var res2 = fruits.some(fruit => fruit[0] === "a"); 
