@@ -1,0 +1,11 @@
+{
+  "operation": "multp",
+  "values": [
+    12,
+    3,
+    10,
+    9
+  ],
+  "result": 3240,
+  "message": "multp of 12, 3, 10, 9 = 3240"
+}
