@@ -6,7 +6,6 @@ let mainPage = fs.readFileSync("./templates/main.html", "utf8");
 let welcomePage = fs.readFileSync("./templates/welcome.html", "utf8");
 let style = fs.readFileSync("./styles/style.css", "utf8");
 let script = fs.readFileSync("./scripts/script.js", "utf8");
-let clients = fs.readFileSync("./clients.json", "utf8");
 
 http.createServer((req,res)=>{
     if(req.method === "GET")
@@ -27,6 +26,7 @@ http.createServer((req,res)=>{
                 break;
 
             case "/clients":
+                let clients = fs.readFileSync("./clients.json", "utf8");
                 res.setHeader(
                     "Content-Type",
                     "application/json"
@@ -53,10 +53,9 @@ http.createServer((req,res)=>{
 
             req.on("end",()=>{
                 let data = querystring.parse(body);
-                let clients = JSON.parse(clients); 
+                let clients = JSON.parse(fs.readFileSync("./clients.json", "utf8")); 
                 clients.push(data);
-                fs.writeFileSync("./clients.json",
-                    JSON.stringify(clients, null, 2));
+                fs.writeFileSync("./clients.json", JSON.stringify(clients, null, 2));
 
                 let page =
                     welcomePage.replace("{{{{NAME}}}}",data.name)
