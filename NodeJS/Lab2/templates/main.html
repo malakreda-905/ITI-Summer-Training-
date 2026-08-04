@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Registration Form</h1>
+
+        <form method="POST" action="/register" onsubmit="return validateForm()">
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+            <input type="text" id="mobile" name="mobile" placeholder="Enter your mobile">
+            <input type="text" id="address" name="address" placeholder="Enter your address">
+            <input type="text" id="email" name="email" placeholder="Enter your email">
+            <button type="submit"> Submit </button>
+        </form>
+    </div>
+
+    <script>
+
+        function validateForm(){
+            let name = document.getElementById("name").value;
+            let mobile = document.getElementById("mobile").value;
+            let address = document.getElementById("address").value;
+            let email = document.getElementById("email").value;
+
+            let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            let mobileRegex = /^[0-9]{11}$/;
+
+            if(name === "")
+            {
+                alert("Please enter your name");
+                return false;
+            }
+
+            if(!mobileRegex.test(mobile))
+            {
+                alert("Please enter a valid mobile number");
+                return false;
+            }
+
+            if(address === "")
+            {
+                alert("Please enter your address");
+                return false;
+            }
+
+            if(!emailRegex.test(email))
+            {
+                alert("Please enter a valid email address");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+
+</body>
+</html>
